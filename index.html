@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="./style.css">
+    <title></title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form id="form" autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="inputname"><b>FIRST NAME</b></label>
+                        <input type="text" class="form-control" id="inputname" name="fname">
+                    </div>
+                    <div>
+                        <label for="inputlastname"><b>LAST NAME</b></label>
+            <input type="text" class="form-control" id="inputlastname" name="lname">
+                    </div>
+                    
+                    <div>
+                        <label for="inputAddress"><b>ADDRESS</b></label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="addr">
+                    </div>
+                    <div><label for="inputpincode"><b>PINCODE</b></label>
+                        <input type="text" class="form-control" id="inputpincode" placeholder="641004" name="pin">
+                      </div>
+                    <div>
+                        <label for="inputcountry"><b>COUNTRY</b></label><br>
+                        <select id="inputcountry" class="country" name="ctry">
+                          <option selected>Choose...</option>
+                          <option>india</option>
+                          <option>	China</option>
+                          <option>	Indonesia</option>
+                          <option>Iran</option>
+                          <option>South Korea</option>
+                          <option>Afghanistan	</option>
+                          <option>	Turkey</option>
+                          <option>Philippines</option>
+                          <option>	Pakistan</option>
+                          
+                        </select>
+                    </div>
+                    <div>
+                       <br> <label for="inputState"><b>STATE</b></label><br>
+            <select id="inputState" class="state" name="st">
+              <option selected>Choose...</option>
+              <option>tamilnadu</option>
+              <option>Karnataka</option>
+              <option>kerala</option>
+              <option>Andhra Pradesh</option>
+              <option>Assam</option>
+              <option>Gujarat</option>
+              <option>Madhya Pradesh</option>
+              <option>Rajasthan</option>
+              <option>West Bengal</option>
+              
+            </select>
+                    </div>
+                    <div>
+                     <br>   <label for="inputgender"><b>GENDER</b></label><br>
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="Male">Male
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="Female">Female
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="others" value="Others">Others
+                    </div>
+                    <div><label for="inputfood"><b>FOOD</b></label><br>
+                        <input id="f1" class="food"name="chk"type="checkbox" value="Dosa"/><label for="Dosa">Dosa</label>
+            <input id="f2" class="food" name="chk"type="checkbox" value="Idly"/><label for="Idly">Idly</label>
+            <input id="f3"class="food" name="chk"type="checkbox" value="FiredRice"/><label for="FiredRice">FiredRice</label>
+            <input id="f4" class="food" name="chk"type="checkbox" value="Noodles"/><label for="Noodles">Noodles</label>
+            <input id="f5" class="food"name="chk"type="checkbox" value="Rice"/><label for="Rice">Rice</label>
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+            </td>
+        </tr>
+    </table>
+    <table class="list" id="storeList">
+        <thead>
+            <tr>
+                <th scope="col">FIRSTNAME</th>
+<th>LASTNAME</th>
+<th>ADDRESS</th>
+<th>PICODE</th>
+<th>COUNTRY</th>
+<th>STATE</th>
+<th>GENDER</th>
+<th>FOOD</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+
+
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
